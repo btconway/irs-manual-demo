@@ -6,7 +6,7 @@ import re
 import zipfile
 
 
-def get_zip_urls(base="https://www.irs.gov/downloads/irm", start_page=1, max_page=74):
+def get_zip_urls(base="https://api.python.langchain.com/en/latest/api_reference.html", start_page=1, max_page=74):
     urls = []
     for page_num in range(start_page, max_page + 1):
         url = f"{base}?page={page_num}"
